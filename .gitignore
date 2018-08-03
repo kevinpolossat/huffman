@@ -37,3 +37,4 @@
 # CMakeLists
 build
 debug
+release
