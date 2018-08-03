@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
         std::string content{
             std::istreambuf_iterator<char>(ifs),
             std::istreambuf_iterator<char>()};
-        std::array<std::uint64_t, 127> lookUpTable = {0};
+        std::array<std::uint64_t, 128> lookUpTable = {0};
         for (auto c: content) {
             ++lookUpTable[c];
         }
