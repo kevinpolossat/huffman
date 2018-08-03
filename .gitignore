@@ -33,3 +33,7 @@
 
 # VsCode
 .vscode
+
+# CMakeLists
+build
+debug
