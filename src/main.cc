@@ -86,7 +86,7 @@ int main(int argc, char *argv[]) {
         }
         std::vector<std::unique_ptr<Node>> minHeap;
         minHeap.reserve(lookUpTable.size());
-        auto cmp = [&lookUpTable](auto const & a, auto const & b) bool { return a->getFrequency() > b->getFrequency(); };
+        auto cmp = [](auto const & a, auto const & b) bool { return a->getFrequency() > b->getFrequency(); };
         for (auto c = 0; c < lookUpTable.size(); ++c) {
             if (lookUpTable[c] > 0) {
                 minHeap.push_back(std::make_unique<Node>(nullptr, nullptr, lookUpTable[c], static_cast<char>(c)));
